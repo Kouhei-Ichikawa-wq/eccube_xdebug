@@ -31,7 +31,7 @@ services:
       - 6060:80
 #      - 4430:443
     volumes:
-      - "src/Eccube:/var/www/html/src/Eccube"
+      - "./src/Eccube:/var/www/html/src/Eccube"
 #      - ".:/var/www/html:cached"
       ### 同期対象からコストの重いフォルダを除外 #####################
 #      - "var:/var/www/html/var"
