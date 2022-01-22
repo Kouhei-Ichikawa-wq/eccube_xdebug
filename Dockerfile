@@ -45,6 +45,9 @@ RUN a2enmod rewrite headers ssl
 RUN ln -s /etc/apache2/sites-available/default-ssl.conf /etc/apache2/sites-enabled/default-ssl.conf
 EXPOSE 443
 
+#.vscode_copy
+#COPY .vscode /var/www/html/ec-cube
+
 # Use the default production configuration
 RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
 # Override with custom configuration settings
